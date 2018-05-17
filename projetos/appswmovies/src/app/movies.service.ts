@@ -1,11 +1,11 @@
 import { Movies } from './shared/movies.model';
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable()
 export class MoviesService {
-    //
+   
     private url = 'https://swapi.co/api/films';
     private urlPlanets = 'https://swapi.co/api/planets';
     private headers: HttpHeaders;
@@ -20,7 +20,11 @@ export class MoviesService {
     getFilmes(): Observable<any> {
         return this.http.get(this.url, {headers: this.headers});
     }
-
+   
+    getAtores(url: string): Observable<any> {
+       return this.http.get(url, {headers: this.headers});
+    }
+   
     getPlanets(): Observable<any> {
         return this.http.get(this.urlPlanets, {headers: this.headers});
     }
