@@ -28,7 +28,6 @@ constructor(private moviesService: MoviesService) { }
     this.moviesService.getFilmes().subscribe(data => {
        this.movies = data.results;
        this.movies.forEach(movie => console.log(movie));
-       this.movies.forEach(movies => console.log(movies.planets.name));
     });
   }
    // exibe os detalhes do respectivo filme (modal)

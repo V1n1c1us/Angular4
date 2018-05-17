@@ -5,7 +5,6 @@
             <img class="card-img-top" src="/assets/img/bg-stars.png" alt="Card image cap">
             <div class="card-body">
                <h5 class="card-title">{{m.title}} - {{last}}</h5>
-               <h5 class="card-title">{{m.planets.name}} - {{last}}</h5>
                <p class="card-text"><!--{{m.planets}}--></p>
                <a (click)="detalhes(m)" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -19,7 +18,7 @@
       <div class="modal-content">
          <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">{{movie?.title}}</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">span
                <span aria-hidden="true">&times;</span>
             </button>
          </div>
@@ -33,16 +32,3 @@
       </div>
    </div>
 </div>
-
-
-<div class="container lista-filmes">
-   <div class="row">
-      <div class="col-md-4" *ngFor="let p of planets">
-         <div class="card">
-            <div class="card-body">
-               <h5 class="card-title">{{p.name}} - {{last}}</h5>
-               <p class="card-text"><!--{{m.planets}}--></p>
-            </div>
-         </div>
-      </div>
-   </div>
