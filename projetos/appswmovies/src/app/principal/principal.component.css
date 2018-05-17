@@ -1,0 +1,24 @@
+.lista-filmes{
+   margin-top: 5%;
+}
+.card{
+   margin-top: 10%;
+   border: none;
+   box-shadow:2px 2px 10px rgba(170, 170, 170, 0.3); border:none;
+}
+.card:hover{
+   box-shadow: 0px 0px 18px .9px #ebd800;
+}
+
+/*.card:hover {*/
+   /*-webkit-transform: scale(1.10);*/
+   /*transform: scale(1.10);*/
+   /*-webkit-transition: 1.6s ease-in-out;*/
+   /*transition: 1.6s ease-in-out;*/
+/*}*/
+/*.card {*/
+   /*-webkit-transform: scale(1.0);*/
+   /*transform: scale(1.0);*/
+   /*-webkit-transition: 1.6s ease-out;*/
+   /*transition: 1.6s ease-out;*/
+/*}*/

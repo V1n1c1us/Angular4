@@ -1,0 +1,43 @@
+/*!* You can add global styles to this file, and also import other style files *!*/
+/*body {margin:0px;padding:0px;overflow:hidden;user-select:none}*/
+
+/*.container{*/
+  /*position: absolute;*/
+  /*top: 150px;*/
+  /*z-index: 9999;*/
+/*}*/
+*{
+   margin: 0;
+   padding: 0;
+}
+#img-logo{
+   margin-top: 5%;
+}
+#background-styles {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -3;
+   background-color: #151515;
+}
+.stars.star-left {
+   left: 0;
+   background-position: left center;
+   background-size: 100% auto;
+   background-image: url(https://static-mh.content.disney.io/starwars/assets/background/bg_starsL-fd4661a3ccea.jpg);
+}
+.stars {
+   position: absolute;
+   width: 200px;
+   height: 100%;
+   top: 0;
+   background-repeat: repeat-y;
+}
+.stars.star-right {
+   right: 0;
+   height: 1700px;
+   background-position: right center;
+   background-size: auto 100%;
+   background-image: url(https://static-mh.content.disney.io/starwars/assets/background/bg_starsR-655c85e404d4.jpg);
+}
